@@ -2,4 +2,19 @@
 POST http://localhost:8080/api/employees
 Content-Type: application/json
 
-{ "name" : "raj", "role": "admin", "deptId": 1 }
+{ "name" : "vikas", "role": "driver", "deptId": 2 }
+
+###
+GET http://localhost:8080/api/employees
+
+###
+GET http://localhost:8080/api/employees/2
+
+###
+PUT http://localhost:8080/api/employees/2
+Content-Type: application/json
+
+{ "name" : "rajesh", "role": "driver", "deptId": 2 }
+
+###
+DELETE http://localhost:8080/api/employees/2
